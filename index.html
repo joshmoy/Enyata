@@ -1,17 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Enyata Bootcampers</title>
+	<title>My HTML Form</title>
 </head>
 <body>
-	<form action="obodaij@gmail.com" method="POST">
-		select one
-		<input type="checkbox" name="checkbox" value="claro"> Claro <br />
+	<form action="#" method="POST">
+		<img src="assets/img/logo.png" alt="logo" width="150" height="75"> <h2>SIGN UP</h2>
+		<h4>Kindly fill the boxes below with the right details</h4>
 
-		<input type="checkbox" name="checkbox2" value="Arizona"> Arizona <br />
+		<label for="fullName"> Full Name: </label> &nbsp; &nbsp;
+		<input type="text" id="fullName" placeholder="Your Name Goes Here" required> <br /> <br />
 
-		<input type="checkbox" name="checkbox3" value="heskey"> Heskey <br />
-		<button type="submit" name="submitbtn" value="submit">Submit</button>
+		<label for="email"> E-mail: </label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		<input type="email" id="email" placeholder="yourmail@sample.com" required>  <br /> <br />
+
+		<label for="password"> Password: </label> &nbsp; &nbsp;
+		<input type="password" id="password" minlength="8" placeholder="Minimum of 8 Characters" required> <br /> <br />
+
+		<label for="phone"> Mobile number: </label> &nbsp; &nbsp;
+		<input type="tel" id="phone" pattern="[0-9]{11}" placeholder="Input Mobile Number" required> <br /> <br />  
+
+		<label for="dob"> Date of Birth: </label> &nbsp; &nbsp;
+		<input type="date" id="dob" required>  <br /> <br />
+
+		<label>Gender: </label>&nbsp; &nbsp;
+		  <input type="radio" name="gender" value="male"> Male
+		  <input type="radio" name="gender" value="female"> Female  <br /><br />
+
+		<label for="state">State of Origin: </label> &nbsp; &nbsp;
+						   <select name="state" id="state">
+							  <option value="" selected="selected" >- Select -</option>
+							  <option value='Abia'>Abia</option>
+							  <option value='Adamawa'>Adamawa</option>
+							  <option value='AkwaIbom'>AkwaIbom</option>
+							  <option value='Anambra'>Anambra</option>
+							  <option value='Bauchi'>Bauchi</option>
+							  <option value='Bayelsa'>Bayelsa</option>
+							  <option value='Benue'>Benue</option>
+							  <option value='Borno'>Borno</option>
+							  <option value='Cross River'>Cross River</option>
+							  <option value='Delta'>Delta</option>
+							  <option value='Ebonyi'>Ebonyi</option>
+							  <option value='Edo'>Edo</option>
+							  <option value='Ekiti'>Ekiti</option>
+							  <option value='Enugu'>Enugu</option>
+							  <option value='FCT'>FCT</option>
+							  <option value='Gombe'>Gombe</option>
+							  <option value='Imo'>Imo</option>
+							  <option value='Jigawa'>Jigawa</option>
+							  <option value='Kaduna'>Kaduna</option>
+							  <option value='Kano'>Kano</option>
+							  <option value='Katsina'>Katsina</option>
+							  <option value='Kebbi'>Kebbi</option>
+							  <option value='Kogi'>Kogi</option>
+							  <option value='Kwara'>Kwara</option>
+							  <option value='Lagos'>Lagos</option>
+							  <option value='Nasarawa'>Nasarawa</option>
+							  <option value='Niger'>Niger</option>
+							  <option value='Ogun'>Ogun</option>
+							  <option value='Ondo'>Ondo</option>
+							  <option value='Osun'>Osun</option>
+							  <option value='Oyo'>Oyo</option>
+							  <option value='Plateau'>Plateau</option>
+							  <option value='Rivers'>Rivers</option>
+							  <option value='Sokoto'>Sokoto</option>
+							  <option value='Taraba'>Taraba</option>
+							  <option value='Yobe'>Yobe</option>
+							  <option value='Zamfara'>Zamafara</option>
+							</select> <br /> <br />  
+
+
+		<label for="address"> House Address: </label> &nbsp; &nbsp;
+		<textarea id="address" name="address" rows="2" cols="33" required></textarea> <br /> <br /> 
+
+		<input type="checkbox" id="subscribe" name="subscribe" value="newsletter" checked>
+    	<label for="subscribe"><small>By clicking on this box, you accept our <a href="#">Terms and Conditions</a></small></label> <br /><br />
+
+		<input type="submit" value="Submit"> &nbsp; &nbsp;
+		<input type="reset" value="Reset">
+		
 	</form>
 </body>
 </html>
